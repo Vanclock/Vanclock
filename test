@@ -1,0 +1,59 @@
+"""
+digraph G {
+    graph [bgcolor="#343541"];
+    node [style="filled,rounded", shape="rectangle", gradientangle=270, color="grey", fillcolor="white:lightgrey", fontname="Helvetica", fontcolor="#343541"];
+    edge [color="#AAAAAA", fontname="Helvetica", fontsize=12, fontcolor="#EEEEEE", arrowsize=1];
+    
+    Esperienza [label="Esperienza", fillcolor="#F4C2C2"];
+    Vendere [label="Vendere", fillcolor="#FDFD96"];
+    Sensazioni [label="Sensazioni", fillcolor="#B4D7A8"];
+    Storie [label="Storie", fillcolor="#AEC6CF"];
+    Momenti [label="Momenti", fillcolor="#CDB4DB"];
+
+    Anniversari [label="Anniversari"];
+    Laurea [label="Laurea"];
+    Nascimenti [label="Nascimenti"];
+    PreMatrimoni [label="Pre-matrimoni"];
+    
+    Ricordi [label="Ricordi"];
+    Fotografie [label="Fotografie"];
+    Video [label="Video"];
+    Cene [label="Cene"];
+    Pranzi [label="Pranzi"];
+    Tour [label="Tour turistici"];
+    
+    Avventure [label="Nuove avventure"];
+    
+    Roma [label="Leggendaria Roma"];
+    
+    DesideriClienti [label="Comprendere i desideri dei clienti prima dell'arrivo per offrire un tocco esclusivo"];
+    CeneAperitivi [label="Offrire cene e aperitivi esclusivi (con bar e ristoranti esclusivi)"];
+
+    Esperienza -> Vendere;
+    Vendere -> "Clienti comprano: esperienze, sensazioni, storie, momenti";
+
+    Esperienza -> Sensazioni;
+    Esperienza -> Storie;
+    Esperienza -> Momenti;
+    
+    Momenti -> Anniversari;
+    Momenti -> Ricordi;
+    
+    Anniversari -> Laurea;
+    Anniversari -> Nascimenti;
+    Anniversari -> PreMatrimoni;
+    
+    Ricordi -> Fotografie;
+    Ricordi -> Video;
+    Ricordi -> Cene;
+    Ricordi -> Pranzi;
+    Ricordi -> Tour;
+    
+    Sensazioni -> Avventure;
+    
+    Storie -> Roma;
+    
+    Esperienza -> DesideriClienti;
+    Esperienza -> CeneAperitivi;
+}
+"""
